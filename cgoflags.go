@@ -4,7 +4,7 @@
 
 package hdf5
 
-// #cgo LDFLAGS: -l:libhdf5.a -l:libhdf5_hl.a
+// #cgo LDFLAGS: -Wl,-Bstatic -l:libhdf5.a -l:libhdf5_hl.a
 // #cgo darwin CFLAGS: -I/usr/local/include
 // #cgo darwin LDFLAGS: -L/usr/local/lib
 // #cgo linux,!arm64 CFLAGS: -I/usr/local/include, -I/usr/lib/x86_64-linux-gnu/hdf5/serial/include
